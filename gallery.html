@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Creations</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'oakley-primary': '#65a30d', // A nice earthy/creative green
+                        'oakley-light': '#f0fdf4',   // Very light green/cream
+                        'oakley-dark': '#1e3a8a',    // Deep blue for contrast
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smoother transitions */
+        .gallery-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-black font-sans text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-8 lg:p-12">
+
+        <!-- Gallery Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-[rgb(170,255,0)] sm:text-6xl mb-4">
+                Our Gallery of Creations
+            </h1>
+            <p class="text-xl text-white max-w-3xl mx-auto">
+                Explore a selection of our finest handmade projects, from custom jewelry to unique home decor. Every piece is crafted with     passion and attention to detail.
+            </p>
+        </header>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kenny's Creations Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Tailwind for Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'oakley-primary': '#65a30d', // Green accent
+                        'oakley-light': '#f0fdf4',
+                        'oakley-dark': '#1e3a8a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Force background for full-page coverage on black */
+        html, body {
+            background-color: black !important;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200 font-sans leading-relaxed flex flex-col items-center py-12 px-4 sm:px-8">
+
+    <!-- Main Container - Centered and max-width restricted -->
+    <div class="container max-w-7xl w-full">
+
+            
+            <!--
+                Responsive Image Grid: 
+                2 columns on mobile, 3 columns on small screens, 4 columns on large screens.
+                Added large gap for aesthetic separation.
+            -->
+            <section id="gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+
+                <!-- Gallery Item 1: Fullsuit -->
+                <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                    <img 
+                        src="images/1.jpg"
+                        alt="Image of a custom full fursuit" 
+                        class="w-full h-full object-cover border-b border-oakley-primary/50"
+                        onerror="this.src='images/1.jpg'"
+                    >
+                </div>
+                <!-- Gallery Item 1: Fullsuit -->
+                <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                    <img 
+                        src="images/2.jpg"
+                        alt="Image of a custom full fursuit" 
+                        class="w-full h-full object-cover border-b border-oakley-primary/50"
+                        onerror="this.src='images/1.jpg'"
+                    >
+                </div>
+                <!-- Gallery Item 1: Fullsuit -->
+            <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                <img 
+                    src="images/3.jpg"
+                    alt="Image of a custom full fursuit" 
+                    class="w-full h-auto object-cover border-b border-oakley-primary/50"
+                    onerror="this.src='images/1.jpg'"
+                >
+            </div>
+            <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+        <img 
+        src="images/4.jpg"
+        alt="Image of a custom full fursuit" 
+        class="w-full h-full object-cover border-b border-oakley-primary/50"
+        onerror="this.src='images/1.jpg'"
+        >
+        </div>
+         <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/5.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/6.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/7.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/8.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/9.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/10.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/11.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/12.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/13.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/14.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/15.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/16.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/17.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/18.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/19.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/20.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/21.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+              <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+     <img 
+     src="images/22.jpg"
+     alt="Image of a custom full fursuit" 
+     class="w-full h-full object-cover border-b border-oakley-primary/50"
+     onerror="this.src='images/1.jpg'"
+     >
+     </div>
+               <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/23.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/24.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/25.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/26.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/27.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/28.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/29.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/30.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/31.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/32.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/33.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/34.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/35.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/36.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/37.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/38.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/39.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+ <img 
+ src="images/40.jpg"
+ alt="Image of a custom full fursuit" 
+ class="w-full h-full object-cover border-b border-oakley-primary/50"
+ onerror="this.src='images/1.jpg'"
+ >
+ </div>
+           <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/41.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/42.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/43.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/44.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/45.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/46.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/47.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/48.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/49.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+          <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+<img 
+src="images/50.jpg"
+alt="Image of a custom full fursuit" 
+class="w-full h-full object-cover border-b border-oakley-primary/50"
+onerror="this.src='images/1.jpg'"
+>
+</div>
+
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-20 pt-8 border-t border-gray-700 w-full">
+            <p class="text-sm text-gray-500">
+                &copy; 2025 Kehinde Studio . All Rights Reserved.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

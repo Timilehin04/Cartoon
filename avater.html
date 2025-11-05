@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny's Studio Fursuits</title>
+    <style>
+        :root {
+            --light-bg: #f5f5f5;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            line-height: 1.6;
+            background-color: black;
+            color: white;
+        }
+
+        /* Header & Navigation */
+        .header {
+            background-color: Black;
+            border-bottom: 1px solid var(--light-bg);
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            color: rgb(170, 255, 0);
+            font-size: 70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 15px;
+        }
+
+        .logo a {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 5px solid var(--secondary-color);
+            color:rgb(170, 255, 0);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 1.5em;
+            color: var(--secondary-color);
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .hero-slogan {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            border: 2px solid var(--accent-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #c0004a;
+            transform: translateY(-1px);
+        }
+
+        /* Content Sections */
+        .content-section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .content-section h2 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Status & Schedule Grid */
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            color: black;
+        }
+
+        .card {
+            flex: 1;
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        
+        .card.commissions h3 {
+             color: var(--primary-color);
+        }
+
+        .closed-status {
+            font-size: 1.5em;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .next-date {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .schedule-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        .schedule-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+        
+        .about-text p:first-of-type {
+            font-weight: bold;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid var(--secondary-color);
+            object-fit: cover;
+        }
+        
+        .image-credit {
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">Kehinde Studio</a>
+            </div>
+            <nav class="nav-links">
+                <a href="avater.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="term.html">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div 
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 hover:scale-105" 
+                style="background-image: url('https://placehold.co/1920x1080/1f2937/ffffff?text=Full+Screen+Hero+Image');"
+            >
+            <!-- 
+                NOTE: Replace the placeholder URL above with your actual image path:
+                style="background-image: url('images/9.jpg');" 
+            -->
+            </div>
+        <h1>Welcome to Kehinde Studio!</h1>
+        <h2>Bringing Character's to Life in an Animated Fashion!</h2>
+        <p class="hero-slogan">
+            Quality Fursuits since 2019. Each one lovingly handmade with care!
+        </p>
+    </section>
+    
+    <section class="content-section">
+        <div class="grid-container">
+            
+            <div class="card commissions">
+                <h3>Commissions Status</h3>
+                <p class="closed-status">COMMISSIONS IS STILL OPEN</p>
+                <p class="next-date">You will be Notified When the Commision will be Closed</p>
+                <p>Get an Official Quote via Discord now, or check out my Pricing to bring Your Dream Fursuit to Life!</p>
+                <a href="#" class="btn" style="background-color: var(--secondary-color); color: white; margin-top: 15px;">Get a Quote</a>
+            </div>
+
+            
+            <div class="card">
+                <h3>Join Kenny Fursuit Family! 🐾</h3>
+                <p>Keep up to date on our terms, including flexible payment plans!</p>
+                <br><br>
+                <p>Stick with us on our journey with treats galore!</p>
+                <a href="https://wa.me/447848100627" class="btn" style="background-color: black; color: rgb(170, 255, 0);;">Whatsapp Me Now!</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Hi! I'm Kenny!</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="" alt="A friendly fursuit creator named Kenny">
+                <p class="image-credit"></p>
+            </div>
+            <div class="about-text">
+                <p>
+                    I'm the Kenny behind Kehinde Studio! I'm a furry creator with a hearing impairment and a passion for character-centric art! Welcome to my corner of the world!
+                </p>
+                <p>
+                    I've always been an artsy person. It brings me great joy to share my talents with others and bring happiness and excitement into their world. Using my knowledge in animation, illustration, and even tailoring, I sought to bring other's visions of characters to life with a uniquely animated spark!
+                </p>
+                <p>
+                    After earning my Animation degree in 2021, I turned this business into a full-time venture! To this day I continue to strive for the most unique, most resilient, most adorable results possible, in all forms of art I pursue, but especially in that of the fursuit variety! It's been quite the journey since our humble beginnings in 2019, and I am eagerly looking forward to keep giving back to the amazing furry fandom!
+                </p>
+                <a href="#" class="btn" style="background-color: var(--primary-color); color: white; margin-top: 20px;">Wanna be a part of the magic? Come join Kenny Fursuit family!</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        alert("You're Welcome To my Studio👋!!!");
+    </script>
+
+    <footer class="footer">
+        &copy; 2025 Kehinde Studio. All Rights Reserved. | Site Map | Privacy Policy
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fursuit Commission Pricing</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind with custom colors used in the pricing section -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'oakley-primary': '#65a30d', // Green accent
+                        'oakley-light': 'black',   // Light background color
+                        'oakley-dark': '#65a30d',    // Deep blue text for contrast
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* General transition for card hover effect */
+        .pricing-card {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-oakley-light font-sans text-gray-800 p-4 sm:p-8 lg:p-12">
+
+    <div class="container mx-auto">
+        <!-- Fursuit Pricing Section -->
+        <section class="mt-16 py-12 bg-white rounded-xl shadow-2xl border-t-4 border-oakley-primary">
+            <header class="text-center mb-10">
+                <h2 class="text-4xl font-extrabold text-oakley-dark mb-4">
+                    Fursuit Commission Pricing
+                </h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+                    Our fursuits are custom-made, one-of-a-kind creations. Prices reflect the complexity, materials (high-quality faux fur, 3D printed bases, resin eyes), and time invested.
+                </p>
+            </header>
+
+            <!-- Pricing Tiers Grid (Responsive) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+
+                <!-- Tier 1: Head Only -->
+                <div class="pricing-card p-6 border-2 border-gray-200 rounded-xl text-center hover:shadow-xl transition duration-300">
+                    <h3 class="text-3xl font-bold text-oakley-primary mb-2">Head Only</h3>
+                    <p class="text-5xl font-extrabold text-oakley-dark mb-4">$1,200+</p>
+                    <p class="text-gray-500 mb-6">A fully-lined, finished head, featuring follow-me eyes or 3D printed eyes, and complex airbrushing.</p>
+                    <ul class="text-left space-y-3 text-gray-700">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Resin or 3D Printed Head Base</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>High-quality Faux Fur</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Custom Eye/Jaw Features</li>
+                    </ul>
+                    <a href="#" class="mt-8 inline-block w-full py-3 bg-oakley-dark text-white font-semibold rounded-lg hover:bg-blue-900 transition duration-300">
+                        Inquire for Head
+                    </a>
+                </div>
+
+                <!-- Tier 2: Partial Suit (Recommended) -->
+                <div class="pricing-card p-8 border-4 border-oakley-primary rounded-xl text-center bg-oakley-light shadow-2xl scale-105">
+                    <h3 class="text-4xl font-bold text-oakley-dark mb-2">Mini Partial Suit</h3>
+                    <p class="text-15px font-extrabold text-oakley-primary mb-4">$2,500+</p>
+                    <p class="text-gray-700 mb-6 font-medium">Includes the head, a pair of matching paws (hands), a tail, and optional feet paws.</p>
+                    <ul class="text-left space-y-3 text-white-100">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z color:white" clip-rule="evenodd"></path></svg>Everything in Head Only Tier</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Padded or Unpadded Hand Paws</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Digitigrade or Plantigrade Feet Paws</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Any Tail Style (Wagging/Floor Dragger)</li>
+                    </ul>
+                    <a href="#" class="mt-8 inline-block w-full py-4 bg-oakley-primary text-white font-extrabold text-lg rounded-lg shadow-xl hover:bg-lime-700 transition duration-300 transform hover:scale-105">
+                        Start Mini Partial Suit Commission
+                    </a>
+                </div>
+
+                <!-- Tier 3: Full Suit -->
+                <div class="pricing-card p-6 border-2 border-gray-200 rounded-xl text-center hover:shadow-xl transition duration-300">
+                    <h3 class="text-3xl font-bold text-oakley-primary mb-2">Partial Suit</h3>
+                    <p class="text-5xl font-extrabold text-oakley-dark mb-4">$4,500+</p>
+                    <p class="text-gray-500 mb-6">The complete package: head, body suit (fitted to your duct tape dummy), hand paws, feet paws, and tail.</p>
+                    <ul class="text-left space-y-3 text-gray-700">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Full, Zippered Body Suit</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Custom Padding (Optional Digitigrade)</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Everything in Partial Suit Tier</li>
+                    </ul>
+                    <a href="#" class="mt-8 inline-block w-full py-3 bg-oakley-dark text-white font-semibold rounded-lg hover:bg-blue-900 transition duration-300">
+                        Inquire for Partial Suit
+                    </a>
+            </div>
+
+            <footer class="text-center mt-10 text-sm text-gray-500">
+    <p>All prices are starting estimates and will vary based on character complexity, number of colors, and added features (e.g., removable tongues, LED eyes, extra padding).</p>
+    <p>A non-refundable deposit is required to secure your commission slot.</p>
+            </footer>
+        </section>
+    </div>
+
+</body>
+</html>
